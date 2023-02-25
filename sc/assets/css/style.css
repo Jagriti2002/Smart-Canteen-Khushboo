@@ -683,6 +683,16 @@ footer .deep-devs a {
     padding: 200px 0 100px 0;  
 }
 
+.orders .container-admin{
+  width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-image:url('../images/menu_img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0 100px 0;  
+}
+
 .orders .container-min {
   max-width: 75rem;
   background: #fff;
