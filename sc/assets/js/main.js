@@ -437,7 +437,7 @@ function cartFunctionalities (addItem, trimedEmailID, addToCartBtn){
             addItem.forEach(item => {
                 if (item.FoodID === id){ 
                     addItem.splice(addItem.indexOf(item) ,1) 
-                    if ( window.location != 'https://smart-canteen-khushboo.netlify.app/user-orders.html'){
+                    if ( window.location != 'https://smartcanteen-khushboo.netlify.app/user-orders.html'){
                         // Enable removed items btn
                         addToCartBtn[item.FoodID-1].disabled = false;
                         addToCartBtn[item.FoodID-1].innerHTML = 'Add to Cart';
@@ -494,7 +494,7 @@ function cartFunctionalities (addItem, trimedEmailID, addToCartBtn){
                 if (item.FoodID === id && item.Quantity >= 1){
                     item.Quantity -= 1;
                     if (item.Quantity === 0){
-                        if ( window.location != 'https://smart-canteen-khushboo.netlify.app/user-orders.html'){
+                        if ( window.location != 'https://smartcanteen-khushboo.netlify.app/user-orders.html'){
                             // Enable Buttons - so user can use them again
                             // Enable removed items btn
                             addToCartBtn[item.FoodID-1].disabled = false;
@@ -530,7 +530,7 @@ function clearUserCart(addItem, addToCartBtn, trimedEmailID){
     cartItemsContainer.innerHTML = '';
     cartValues.forEach(values => { values.innerHTML = '0';})
     cartTotal.innerHTML = '0';
-    if ( window.location != 'https://smart-canteen-khushboo.netlify.app/user-orders.html'){
+    if ( window.location != 'https://smartcanteen-khushboo.netlify.app/user-orders.html'){
         // Enable removed items btn
         addItem.forEach(item=>{
             addToCartBtn[item.FoodID-1].disabled = false;
@@ -608,7 +608,7 @@ function ClientDataFlow(addToCartBtn){
                         // Store previouly added items to array -
                         addItem.push(userCart[i])
                         // Disable already added items
-                        if (window.location != 'https://smart-canteen-khushboo.netlify.app/user-orders.html'){
+                        if (window.location != 'https://smartcanteen-khushboo.netlify.app/user-orders.html'){
                             addToCartBtn[userCart[i].FoodID-1].disabled = true;
                             addToCartBtn[userCart[i].FoodID-1].innerHTML = 'In Cart';
                         }
@@ -652,7 +652,7 @@ function ClientDataFlow(addToCartBtn){
                         title: 'Order Successfully Recorded',
                     });
                     window.setTimeout(function(){
-                        window.location.replace('https://smart-canteen-khushboo.netlify.app/user-orders.html')
+                        window.location.replace('https://smartcanteen-khushboo.netlify.app/user-orders.html')
                     }, 2600)
                 } else {
                     Swal.fire({
@@ -663,7 +663,7 @@ function ClientDataFlow(addToCartBtn){
             })
 
             // Shows Orders
-            if (window.location.href === 'https://smart-canteen-khushboo.netlify.app/user-orders.html'){
+            if (window.location.href === 'https://smartcanteen-khushboo.netlify.app/user-orders.html'){
                 setOrderDetails(trimedEmailID)
             }
         } else {
