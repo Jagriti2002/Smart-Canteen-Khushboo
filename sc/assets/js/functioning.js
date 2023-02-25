@@ -101,7 +101,7 @@
 
     static authRedirecting() {
       window.setTimeout(() => {
-        window.location.replace('https://smart-canteen-khushboo.netlify.app/client-side.html');
+        window.location.replace('https://smartcanteen-khushboo.netlify.app/client-side.html');
       }, 500)
     }
 
@@ -118,7 +118,7 @@
     firebaseAuthRedirect(){
       firebase.auth().onAuthStateChanged(function(user) {
         // If user is registered -
-        user ?  window.location.replace('https://smart-canteen-khushboo.netlify.app/client-side.html') : console.log('none');
+        user ?  window.location.replace('https://smartcanteen-khushboo.netlify.app/client-side.html') : console.log('none');
       });
     }
   }
@@ -229,7 +229,7 @@
             title: 'Logged Out Successfully',
           })
           firebase.auth().signOut().then(() => {
-            window.location.replace("https://smart-canteen-khushboo.netlify.app/index.html")
+            window.location.replace("https://smartcanteen-khushboo.netlify.app/index.html")
           });
         });
       })
