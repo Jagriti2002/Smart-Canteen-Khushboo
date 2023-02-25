@@ -461,33 +461,6 @@ span {
   color: #fff;
 }
 
-/* Hero Section */
-.hero {
-  height: 600px;
-}
-
-.hero img {
-  min-width: 150px;
-  margin-top: -50px;
-  margin-left: 100px;
-  background-size: contain;
-
-}
-
-.hero h3 {
-  font-size: 30px;
-}
-
-.hero li {
-  margin-top: 10px;
-  padding-right: 20px;
-}
-
-.hero p {
-  max-width: 800px;
-  font-size: 16px;
-}
-
 /* Come & Dine Section */
 .showcase h6 {
   color: #aea512;
@@ -546,62 +519,7 @@ span {
 
 /* ------------------ Menu Page CSS ----------------- */
 
-/* ----------------- Our Vision CSS ------------------ */
-/* Banner Image */
-.main-img {
-  background: url("../images/8690.jpg") center/cover no-repeat;
-  min-height: calc(95vh - 40px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-/* Our History Section */
-.our-history p {
-  max-width: 28em;
-  font-size: 22px;
-}
-
-.our-history img {
-  box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px rgb(210 200 42 / 80%);
-  max-width: 420px;
-  height: 250px;
-}
-
-/* History & Philosphy */
-.our-history h1,
-.our-philosphy h1 {
-  color: #533834;
-}
-.our-history h3,
-.our-philosphy h3 {
-  color: #aea512;
-}
-
-/* Our Philoshpy */
-.our-philosphy figure {
-  padding: 0 20px;
-  margin: 5px 10px;
-}
-
-.our-philosphy figcaption {
-  display: flex;
-}
-
-.our-philosphy img {
-  width: 70px;
-  height: 70px;
-  margin-right: 20px;
-}
-
-.our-philosphy figure {
-  max-width: 500px;
-}
-
-.our-philosphy p {
-  max-width: 350px;
-  font-size: 18px;
-}
 
 /* --- Customer Footer --- */
 footer {
@@ -754,6 +672,17 @@ footer .deep-devs a {
 }
 
 /* ----- (Client) Your Orders Page ----- */
+
+.khushboo .container-admin{
+  width: 100%;
+    height: auto;
+    min-height: 650px;
+    background-image:url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0 100px 0;  
+}
+
 .orders .container-min {
   max-width: 75rem;
   background: #fff;
@@ -769,9 +698,8 @@ footer .deep-devs a {
   margin: 1rem 0;
 }
 
-.orders .title {
-  border-bottom: 1px solid #999;
-  padding-bottom: 0.5rem;
+.khushboo .title {
+  color: #fff;
 }
 
 .orders img {
@@ -892,11 +820,34 @@ tr {
   display: block;
 }
 
+.product-management .container-admin{
+  width: 100%;
+    height: auto;
+    min-height: 1050px;
+    background-image:url('../images/home\ \(5\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0 100px 0;  
+}
+
+.product-management .container-min .title{
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.add-product .container-min .title{
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .product-management .container-min {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 40px auto;
   padding: 20px;
   max-width: 120vh;
+  margin-top: -150px;
 }
 
 .add-product .container-min {
@@ -904,6 +855,7 @@ tr {
   max-width: 120vh;
   margin: 40px auto;
   padding: 25px;
+  margin-top: -650px;
 }
 
 .add-product input {
