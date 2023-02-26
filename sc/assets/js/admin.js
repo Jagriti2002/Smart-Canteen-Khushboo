@@ -7,7 +7,7 @@ const addContainer = document.querySelector(".add-container");
 const removeContainer = document.querySelector(".remove-container");
 
 // Admin Side URL
-const adminSRC = "http://127.0.0.1:5500/sc/admin-side.html";
+const adminSRC = "https://smartcanteen-khushboo.netlify.app/admin-side.html";
 
 // --- Admin Side ---
 if (adminSRC === window.location.href) {
